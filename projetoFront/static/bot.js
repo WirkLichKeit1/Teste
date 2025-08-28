@@ -28,7 +28,7 @@ async function fetchUserLogs() {
     try {
         const decoded = JSON.parse(atob(token.split('.')[1]));
         const userId = decoded.user_id;
-        const response = await fetch(`https://teste-o4fg.onrender.com/api/logs/${userId}?limite=50`, {
+        const response = await fetch(`https://teste-1-ptn8.onrender.com/api/logs/${userId}?limite=50`, {
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${token}`,
@@ -136,7 +136,7 @@ async function sendMessage() {
             headers['Authorization'] = `Bearer ${token}`;
         }
 
-        const response = await fetch('https://teste-o4fg.onrender.com/api/query', {
+        const response = await fetch('https://teste-1-ptn8.onrender.com/api/query', {
             method: 'POST',
             headers: headers,
             body: JSON.stringify({ query: message })
@@ -221,4 +221,5 @@ document.addEventListener('DOMContentLoaded', function() {
     loadMessages();
 
 });
+
 
