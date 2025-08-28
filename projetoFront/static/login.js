@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const senha = form.querySelector('input[type="password"]').value;
 
         try {
-            const response = await fetch("https://teste-o4fg.onrender.com/api/login", {
+            const response = await fetch("https://teste-1-ptn8.onrender.com/api/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -32,4 +32,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
 
